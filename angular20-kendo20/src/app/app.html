@@ -1,0 +1,27 @@
+<div class="app-container">
+  <h1>{{ title() }}</h1>
+  
+  <div class="button-container">
+    <button kendoButton (click)="openDialog()" [primary]="true">
+      Open Dialog
+    </button>
+    <button kendoButton (click)="openWindow()" [primary]="true">
+      Open Window
+    </button>
+  </div>
+
+  @if (dialogOpened()) {
+    <kendo-dialog [title]="'Dialog Form'" (close)="closeDialog()" [width]="450">
+      <app-dialog-form></app-dialog-form>
+      <kendo-dialog-actions>
+        <button kendoButton (click)="closeDialog()">Close</button>
+      </kendo-dialog-actions>
+    </kendo-dialog>
+  }
+
+  @if (windowOpened()) {
+    <kendo-window [title]="'Window Form'" (close)="closeWindow()" [width]="500" [height]="400">
+      <app-window-form></app-window-form>
+    </kendo-window>
+  }
+</div>
