@@ -21,7 +21,7 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            "outputPath": "../../docs/angular20-kendo20",
+            "outputPath": "../docs/angular20-kendo20",
             "browser": "src/main.ts",
             "polyfills": [
               "@angular/localize/init"
