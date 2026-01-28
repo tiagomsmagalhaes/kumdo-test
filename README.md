@@ -1,10 +1,10 @@
-# kumdo-test
+# kendo-test
 
 Demo repository showcasing Angular applications with Kendo UI components for debugging and testing purposes.
 
 ## 🚀 Live Demo
 
-Visit the deployed apps at: [https://tiagomsmagalhaes.github.io/kumdo-test/](https://tiagomsmagalhaes.github.io/kumdo-test/)
+Visit the deployed apps at: [https://tiagomsmagalhaes.github.io/kendo-test/](https://tiagomsmagalhaes.github.io/kendo-test/)
 
 ## 📦 Applications
 
