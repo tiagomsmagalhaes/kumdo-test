@@ -53,7 +53,7 @@
                 }
               ],
               "outputHashing": "all",
-              "baseHref": "/kumdo-test/angular16-kendo12/"
+              "baseHref": "/kendo-test/angular16-kendo12/"
             },
             "development": {
               "buildOptimizer": false,

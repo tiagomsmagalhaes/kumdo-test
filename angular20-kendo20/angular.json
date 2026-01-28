@@ -39,7 +39,7 @@
           },
           "configurations": {
             "production": {
-              "baseHref": "/kumdo-test/angular20-kendo20/",
+              "baseHref": "/kendo-test/angular20-kendo20/",
               "budgets": [
                 {
                   "type": "initial",
