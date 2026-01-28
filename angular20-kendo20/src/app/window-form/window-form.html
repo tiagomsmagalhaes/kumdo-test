@@ -1,0 +1,47 @@
+<div class="form-container">
+  <div class="form-field">
+    <label for="title">Title:</label>
+    <input 
+      type="text" 
+      id="title" 
+      class="k-textbox"
+      [ngModel]="title()"
+      (ngModelChange)="updateTitle($event)"
+    />
+  </div>
+
+  <div class="form-field">
+    <label for="description">Description:</label>
+    <textarea 
+      id="description" 
+      class="k-textarea"
+      rows="4"
+      [ngModel]="description()"
+      (ngModelChange)="updateDescription($event)"
+    ></textarea>
+  </div>
+
+  <div class="form-field">
+    <label for="category">Category:</label>
+    <kendo-dropdownlist
+      id="category"
+      [data]="categories"
+      [ngModel]="category()"
+      (ngModelChange)="updateCategory($event)"
+      [style.width.%]="100"
+    >
+    </kendo-dropdownlist>
+  </div>
+
+  <div class="form-field">
+    <label for="priority">Priority:</label>
+    <kendo-dropdownlist
+      id="priority"
+      [data]="priorities"
+      [ngModel]="priority()"
+      (ngModelChange)="updatePriority($event)"
+      [style.width.%]="100"
+    >
+    </kendo-dropdownlist>
+  </div>
+</div>

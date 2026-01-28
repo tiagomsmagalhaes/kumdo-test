@@ -1,0 +1,47 @@
+<div class="form-container">
+  <div class="form-field">
+    <label for="name">Name:</label>
+    <input 
+      type="text" 
+      id="name" 
+      class="k-textbox"
+      [ngModel]="name()"
+      (ngModelChange)="updateName($event)"
+    />
+  </div>
+
+  <div class="form-field">
+    <label for="email">Email:</label>
+    <input 
+      type="email" 
+      id="email" 
+      class="k-textbox"
+      [ngModel]="email()"
+      (ngModelChange)="updateEmail($event)"
+    />
+  </div>
+
+  <div class="form-field">
+    <label for="country">Country:</label>
+    <kendo-dropdownlist
+      id="country"
+      [data]="countries"
+      [ngModel]="country()"
+      (ngModelChange)="updateCountry($event)"
+      [style.width.%]="100"
+    >
+    </kendo-dropdownlist>
+  </div>
+
+  <div class="form-field">
+    <label for="city">City:</label>
+    <kendo-dropdownlist
+      id="city"
+      [data]="cities"
+      [ngModel]="city()"
+      (ngModelChange)="updateCity($event)"
+      [style.width.%]="100"
+    >
+    </kendo-dropdownlist>
+  </div>
+</div>

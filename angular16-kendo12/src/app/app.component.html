@@ -1,0 +1,29 @@
+<div class="app-container">
+  <h1>{{ title }}</h1>
+  
+  <div class="button-group">
+    <button kendoButton (click)="openDialog()" themeColor="primary">
+      Open Dialog
+    </button>
+    <button kendoButton (click)="openWindow()" themeColor="info">
+      Open Window
+    </button>
+  </div>
+
+  <kendo-dialog *ngIf="dialogOpened" (close)="closeDialog()" [minWidth]="250" [width]="450">
+    <kendo-dialog-titlebar>
+      <div>Dialog Title</div>
+    </kendo-dialog-titlebar>
+    <app-dialog-form></app-dialog-form>
+    <kendo-dialog-actions>
+      <button kendoButton (click)="closeDialog()">Close</button>
+    </kendo-dialog-actions>
+  </kendo-dialog>
+
+  <kendo-window *ngIf="windowOpened" (close)="closeWindow()" [minWidth]="250" [width]="500">
+    <kendo-window-titlebar>
+      <div>Window Title</div>
+    </kendo-window-titlebar>
+    <app-window-form></app-window-form>
+  </kendo-window>
+</div>
