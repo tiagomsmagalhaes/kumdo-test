@@ -8,6 +8,13 @@
     <button kendoButton (click)="openWindow()" [primary]="true">
       Open Window
     </button>
+
+    <button kendoButton (click)="openDialogViaService()" themeColor="secondary">
+      Open Dialog (Service)
+    </button>
+    <button kendoButton (click)="openWindowViaService()" themeColor="secondary">
+      Open Window (Service)
+    </button>
   </div>
 
   @if (dialogOpened()) {

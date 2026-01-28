@@ -8,6 +8,13 @@
     <button kendoButton (click)="openWindow()" themeColor="info">
       Open Window
     </button>
+
+    <button kendoButton (click)="openDialogViaService()" themeColor="secondary">
+      Open Dialog (Service)
+    </button>
+    <button kendoButton (click)="openWindowViaService()" themeColor="secondary">
+      Open Window (Service)
+    </button>
   </div>
 
   <kendo-dialog *ngIf="dialogOpened" (close)="closeDialog()" [minWidth]="250" [width]="450">
