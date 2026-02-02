@@ -4,6 +4,7 @@ import { DropDownsModule } from '@progress/kendo-angular-dropdowns';
 
 @Component({
   selector: 'app-window-form',
+  standalone: true,
   imports: [FormsModule, DropDownsModule],
   templateUrl: './window-form.html',
   styleUrl: './window-form.scss'

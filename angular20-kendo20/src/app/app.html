@@ -1,5 +1,23 @@
 <div class="app-container">
   <h1>{{ title() }}</h1>
+
+  <div class="action-row">
+    <kendo-dropdownbutton
+      [data]="dropdownItems"
+      (itemClick)="onDropdownItemClick($event)"
+      themeColor="secondary"
+    >
+      Actions
+    </kendo-dropdownbutton>
+    <button kendoButton themeColor="primary" (click)="onActionButtonClick()">
+      Kendo Button
+    </button>
+  </div>
+
+  <div class="progress-row">
+    <kendo-progressbar [value]="progressValue()" [max]="100"></kendo-progressbar>
+    <button kendoButton themeColor="primary" (click)="incrementProgress()">+10%</button>
+  </div>
   
   <div class="button-container">
     <button kendoButton (click)="openDialog()" [primary]="true">

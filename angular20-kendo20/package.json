@@ -35,6 +35,7 @@
     "@progress/kendo-angular-dropdowns": "^22.0.1",
     "@progress/kendo-angular-intl": "^22.0.1",
     "@progress/kendo-angular-l10n": "^22.0.1",
+    "@progress/kendo-angular-progressbar": "^22.0.1",
     "@progress/kendo-licensing": "^1.10.0",
     "@progress/kendo-theme-default": "^12.3.0",
     "rxjs": "~7.8.0",

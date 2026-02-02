@@ -14,6 +14,14 @@ export class AppComponent {
   dialogOpened = false;
   windowOpened = false;
 
+  progressValue = 35;
+
+  dropdownItems = [
+    { text: 'Action 1' },
+    { text: 'Action 2' },
+    { text: 'Action 3' }
+  ];
+
   private dialogRef?: DialogRef;
   private windowRef?: WindowRef;
 
@@ -66,5 +74,19 @@ export class AppComponent {
     this.windowRef.result.subscribe(() => {
       this.windowRef = undefined;
     });
+  }
+
+  onDropdownItemClick(e: { item?: { text?: string } }): void {
+    const selected = e?.item?.text ?? 'Unknown';
+    // Keeping it simple for demo purposes
+    console.log('Dropdown clicked:', selected);
+  }
+
+  onActionButtonClick(): void {
+    console.log('Kendo button clicked');
+  }
+
+  incrementProgress(): void {
+    this.progressValue = (this.progressValue + 10) % 110;
   }
 }

@@ -16,3 +16,28 @@
     margin-bottom: 30px;
   }
 }
+
+.action-row {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem 0 1.5rem;
+}
+
+.progress-row {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 0 1.5rem;
+
+  kendo-progressbar {
+    width: 320px;
+    max-width: 80vw;
+  }
+}
