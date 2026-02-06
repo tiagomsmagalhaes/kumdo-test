@@ -1,0 +1,35 @@
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.wrap-status {
+  font-size: 14px;
+  color: #555;
+}
+
+/* ===== Text-wrap mode (default) ===== */
+.text-wrap-grid {
+  ::ng-deep {
+    .k-grid td,
+    .k-grid .k-table-td {
+      white-space: normal;
+      word-break: break-word;
+      overflow-wrap: break-word;
+    }
+  }
+}
+
+/* ===== No-wrap mode ===== */
+.no-wrap {
+  ::ng-deep {
+    .k-grid td,
+    .k-grid .k-table-td {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

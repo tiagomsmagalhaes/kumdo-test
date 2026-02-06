@@ -6,6 +6,7 @@ import { DropDownsModule } from '@progress/kendo-angular-dropdowns';
 import { ProgressBarModule } from '@progress/kendo-angular-progressbar';
 import { DialogFormComponent } from './dialog-form/dialog-form';
 import { WindowFormComponent } from './window-form/window-form';
+import { GridExampleComponent } from './grid-example/grid-example';
 
 @Component({
   selector: 'app-root',
@@ -17,7 +18,8 @@ import { WindowFormComponent } from './window-form/window-form';
     DropDownsModule,
     ProgressBarModule,
     DialogFormComponent,
-    WindowFormComponent
+    WindowFormComponent,
+    GridExampleComponent
   ],
   templateUrl: './app.html',
   styleUrl: './app.scss'

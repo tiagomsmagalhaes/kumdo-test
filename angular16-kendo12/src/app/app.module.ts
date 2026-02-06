@@ -11,12 +11,16 @@ import { ProgressBarModule } from '@progress/kendo-angular-progressbar';
 import { AppComponent } from './app.component';
 import { DialogFormComponent } from './dialog-form/dialog-form.component';
 import { WindowFormComponent } from './window-form/window-form.component';
+import { GridExampleComponent } from './grid-example/grid-example.component';
+import { GridModule } from '@progress/kendo-angular-grid';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     DialogFormComponent,
-    WindowFormComponent
+    WindowFormComponent,
+    GridExampleComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +30,8 @@ import { WindowFormComponent } from './window-form/window-form.component';
     ButtonsModule,
     DropDownButtonModule,
     DropDownsModule,
-    ProgressBarModule
+    ProgressBarModule,
+    GridModule
   ],
   providers: [],
   bootstrap: [AppComponent]
